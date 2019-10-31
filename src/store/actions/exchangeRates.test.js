@@ -1,7 +1,5 @@
-import {updateExchangeRates} from './exchangeRates'
+import { updateExchangeRates } from "./exchangeRates";
 
-describe('exchangeRates redux actions', () => {
-    it('updateExchangeRates action creator', () => {
-
-    })
-})
+describe("exchangeRates redux actions", () => {
+  it("updateExchangeRates action creator", () => {});
+});

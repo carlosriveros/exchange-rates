@@ -1,7 +1,9 @@
 interface RatesHTTPResponse {
-    rates: Object
+  rates: Object;
 }
 
-export const getRates = () : Promise<RatesHTTPResponse> => {
-    return fetch('https://api.exchangeratesapi.io/latest').then(res => res.json())
-}
+export const getRates = (): Promise<RatesHTTPResponse> => {
+  return fetch("https://api.exchangeratesapi.io/latest").then(res =>
+    res.json()
+  );
+};

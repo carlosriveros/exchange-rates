@@ -1,13 +1,13 @@
-import React from 'react';
-import { Button as AntButton} from 'antd'
+import React from "react";
+import { Button as AntButton } from "antd";
 
 interface Props {
-    onClick: () => void,
-    message: string,
+  onClick: () => void;
+  message: string;
 }
 
-const Button = (props : Props) => {
-    return <AntButton onClick={props.onClick}>{ props.message }</AntButton>
-}
+const Button = (props: Props) => {
+  return <AntButton onClick={props.onClick}>{props.message}</AntButton>;
+};
 
-export default Button
+export default Button;
