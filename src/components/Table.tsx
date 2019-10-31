@@ -3,9 +3,9 @@ import { Table as AntTable } from "antd";
 
 interface Props {
   dispatch?: () => void;
-  dataSource: any;
-  columns: any;
-  isLoading: any;
+  dataSource: Array<any>;
+  columns: Array<any>;
+  isLoading: boolean;
 }
 
 // TODO: Fix Props interface and substitute any type

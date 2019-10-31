@@ -10,14 +10,13 @@ interface State {
   isInErrorMode: boolean;
 }
 
-const reducer = (
-  state: State = {
-    ratesInformation: [],
-    isLoading: false,
-    isInErrorMode: false
-  },
-  action: any
-) => {
+export const initialState = {
+  ratesInformation: [],
+  isLoading: false,
+  isInErrorMode: false
+};
+
+const reducer = (state: State = initialState, action: any) => {
   switch (action.type) {
     case UPDATE_EXCHANGE_RATES: {
       const exchangeRatesArray = Object.keys(action.action).map(k => {
